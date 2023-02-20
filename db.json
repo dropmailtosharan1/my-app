@@ -1,0 +1,20 @@
+{
+  "login": [],
+  "posts": [
+    {
+      "id": 1,
+      "firstName": "Sharan",
+      "lastName": "Reddy",
+      "email": "sharanreddy@gmail.com",
+      "mobile": "9898980000",
+      "salary": "55000"
+    }
+  ],
+  "signup": {
+    "name": "Sharan Reddy",
+    "phone": "9090890900",
+    "email": "sharanreddy@gmail.com",
+    "password": "12345",
+    "repeatpassword": "12345"
+  }
+}
