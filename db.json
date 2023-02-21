@@ -1,16 +1,5 @@
 {
-  "login": [
-    {
-      "username": "sharan@gmail.com",
-      "password": "12345",
-      "id": 1
-    },
-    {
-      "username": "sharan@gmail.com",
-      "password": "12345",
-      "id": 2
-    }
-  ],
+  "login": [],
   "posts": [
     {
       "id": 1,
@@ -30,9 +19,9 @@
     }
   ],
   "signup": {
-    "name": "Sharan",
-    "phone": "98765434321",
-    "email": "sharan@gmail.com",
+    "name": "Sharan Reddy",
+    "phone": "9898989898",
+    "email": "sharanreddy@gmail.com",
     "password": "12345",
     "repeatpassword": "12345"
   }

@@ -30,11 +30,6 @@ export class LoginComponent implements OnInit {
         );
         if (user) {
           alert('Login Successfull');
-          this.http
-            .post('http://localhost:3000/login', this.loginForm.value)
-            .subscribe((res: any) => {
-              console.log('login data strorde' + res);
-            });
           this.loginForm.reset();
           this.router.navigate(['employee-dashboard']);
         } else {
