@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   loginForm: FormGroup | any;
 
-  constructor(private http:HttpClient, private router:Router) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   ngOnInit(): void {
     this.loginForm = new FormGroup({
@@ -21,20 +21,29 @@ export class LoginComponent implements OnInit {
   }
 
   loginData() {
-    this.http.get<any>("http://localhost:3000/signup").subscribe(res=>{
-      const user = res.find((a:any)=>{
-        return a.username===this.loginForm.value.username && a.password===this.loginForm.value.password
-      })
-      if(user){
-        alert("Login Successfull");
-        this.loginForm.reset();
-        this.router.navigate(['employee-dashboard']);
-      }else{
-        alert("User not found please check");
+    this.http.get<any>('http://localhost:3000/signup').subscribe(
+      (res: any) => {
+        const user = Object.values(res).filter(
+          (a: any) =>
+            a.email === this.loginForm.value.username &&
+            a.password === this.loginForm.value.password
+        );
+        if (user) {
+          alert('Login Successfull');
+          this.http
+            .post('http://localhost:3000/login', this.loginForm.value)
+            .subscribe((res: any) => {
+              console.log('login data strorde' + res);
+            });
+          this.loginForm.reset();
+          this.router.navigate(['employee-dashboard']);
+        } else {
+          alert('User not found please check');
+        }
+      },
+      (err) => {
+        alert('Something went wrong let me check it once...!');
       }
-    },err=>{
-      alert("Something went wrong let me check it once...!");
-    }
     );
   }
 }
