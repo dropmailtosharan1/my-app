@@ -1,5 +1,4 @@
 {
-  "login": [],
   "posts": [
     {
       "id": 1,
@@ -18,11 +17,22 @@
       "salary": "53000"
     }
   ],
-  "signup": {
-    "name": "Sharan Reddy",
-    "phone": "9898989898",
-    "email": "sharanreddy@gmail.com",
-    "password": "12345",
-    "repeatpassword": "12345"
-  }
+  "signup": [
+    {
+      "name": "Sharan Reddy",
+      "phone": "9000000000",
+      "email": "sharan@gmail.com",
+      "password": "12345",
+      "repeatpassword": "12345",
+      "id": 1
+    },
+    {
+      "name": null,
+      "phone": null,
+      "email": null,
+      "password": null,
+      "repeatpassword": null,
+      "id": 2
+    }
+  ]
 }
