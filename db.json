@@ -4,6 +4,11 @@
       "username": "sharan@gmail.com",
       "password": "12345",
       "id": 1
+    },
+    {
+      "username": "sharan@gmail.com",
+      "password": "12345",
+      "id": 2
     }
   ],
   "posts": [
@@ -14,6 +19,14 @@
       "email": "sharanreddy@gmail.com",
       "mobile": "9898980000",
       "salary": "55000"
+    },
+    {
+      "id": 2,
+      "firstName": "Kumar ",
+      "lastName": "Krishna",
+      "email": "kumarkrishna@gmail.com",
+      "mobile": "9898989898",
+      "salary": "53000"
     }
   ],
   "signup": {
