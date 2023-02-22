@@ -41,7 +41,7 @@
       <td>{{ row.lastName }}</td>
       <td>{{ row.email }}</td>
       <td>{{ row.mobile }}</td>
-      <td> &nbsp;{{ row.salary  | currency : "INR" }} </td>
+      <td>&nbsp;{{ row.salary | currency : "INR" }}</td>
       <td>
         <button
           style="color: aliceblue"
@@ -89,12 +89,28 @@
               >First Name</label
             >
             <input
+              [ngClass]="
+                formValue.controls['firstName'].touched &&
+                formValue.hasError('required', 'firstName')
+                  ? 'primary'
+                  : 'secondary'
+              "
               type="text"
               formControlName="firstName"
               class="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
             />
+            <p>
+              <small
+                *ngIf="
+                  formValue.controls['firstName'].touched &&
+                  formValue.hasError('required', 'firstName')
+                "
+                class="text-danger"
+                >*First Name is required</small
+              >
+            </p>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label"

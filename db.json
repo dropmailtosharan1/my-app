@@ -6,7 +6,7 @@
       "lastName": "Reddy",
       "email": "sharanreddy@gmail.com",
       "mobile": "9898980000",
-      "salary": "55000"
+      "salary": "55080"
     },
     {
       "id": 2,
@@ -15,6 +15,30 @@
       "email": "kumarkrishna@gmail.com",
       "mobile": "9898989898",
       "salary": "53000"
+    },
+    {
+      "id": 3,
+      "firstName": "Maruthi",
+      "lastName": "Reddy",
+      "email": "maruthireddy@gmail.com",
+      "mobile": "8998877889",
+      "salary": "70000"
+    },
+    {
+      "id": 4,
+      "firstName": "Rama ",
+      "lastName": "Krishna",
+      "email": "ramakrishna@gmail.com",
+      "mobile": "8767899000",
+      "salary": "60000"
+    },
+    {
+      "id": 5,
+      "firstName": "Madhu",
+      "lastName": "Reddy",
+      "email": "madhureddy@gmail.com",
+      "mobile": "9776565656",
+      "salary": "60000"
     }
   ],
   "signup": [
@@ -27,12 +51,22 @@
       "id": 1
     },
     {
-      "name": null,
-      "phone": null,
-      "email": null,
-      "password": null,
-      "repeatpassword": null,
+      "name": "Krishna Kumar",
+      "phone": "9090908899",
+      "email": "krishnakumar@gmail.com",
+      "password": "12345",
+      "repeatpassword": "12345",
+      "checkbox": true,
       "id": 2
+    },
+    {
+      "name": "Veera ",
+      "phone": "9876543210",
+      "email": "veera@gmail.com",
+      "password": "12345",
+      "repeatpassword": "12345",
+      "checkbox": true,
+      "id": 3
     }
   ]
 }
