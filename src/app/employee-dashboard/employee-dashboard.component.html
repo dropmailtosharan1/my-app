@@ -95,6 +95,7 @@
                   ? 'primary'
                   : 'secondary'
               "
+              placeholder="firstName"
               type="text"
               formControlName="firstName"
               class="form-control"
@@ -117,42 +118,110 @@
               >Last Name</label
             >
             <input
+              [ngClass]="
+                formValue.controls['lastName'].touched &&
+                formValue.hasError('required', 'lastName')
+                  ? 'primary'
+                  : 'secondary'
+              "
+              placeholder="lastName"
               type="text"
               formControlName="lastName"
               class="form-control"
               id="exampleInputPassword1"
             />
+            <p>
+              <small
+                *ngIf="
+                  formValue.controls['lastName'].touched &&
+                  formValue.hasError('required', 'lastName')
+                "
+                class="text-danger"
+                >*last name is required</small
+              >
+            </p>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label"
               >Email ID</label
             >
             <input
+              [ngClass]="
+                formValue.controls['email'].touched &&
+                formValue.hasError('required', 'email')
+                  ? 'primary'
+                  : 'secondary'
+              "
+              placeholder="email"
               type="email"
               formControlName="email"
               class="form-control"
               id="exampleInputPassword1"
             />
+            <p>
+              <small
+                *ngIf="
+                  formValue.controls['email'].touched &&
+                  formValue.hasError('required', 'email')
+                "
+                class="text-danger"
+                >*email is required</small
+              >
+            </p>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label"
               >Mobile Number</label
             >
             <input
+              [ngClass]="
+                formValue.controls['mobile'].touched &&
+                formValue.hasError('required', 'mobile')
+                  ? 'primary'
+                  : 'secondary'
+              "
+              placeholder="mobile"
               type="text"
               formControlName="mobile"
               class="form-control"
               id="exampleInputPassword1"
             />
+            <p>
+              <small
+                *ngIf="
+                  formValue.controls['mobile'].touched &&
+                  formValue.hasError('required', 'mobile')
+                "
+                class="text-danger"
+                >*mobile number is required</small
+              >
+            </p>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Salary</label>
             <input
+              [ngClass]="
+                formValue.controls['salary'].touched &&
+                formValue.hasError('required', 'salary')
+                  ? 'primary'
+                  : 'secondary'
+              "
+              placeholder="salary"
               type="text"
               formControlName="salary"
               class="form-control"
               id="exampleInputPassword1"
             />
+            <p>
+              <small
+                *ngIf="
+                  formValue.controls['salary'].touched &&
+                  formValue.hasError('required', 'salary')
+                "
+                class="text-danger"
+                >*salary is required</small
+              >
+            </p>
           </div>
         </form>
       </div>

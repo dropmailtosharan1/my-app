@@ -10,7 +10,12 @@ export class ApiService {
   constructor(private http : HttpClient) { }
 
   postEmployee(data:any){
+    if(data!=null){
     return this.http.post<any>(this.urlLink, data)
+    }
+    else{
+      return null;
+    }
   }
   getEmployee(){
     return this.http.get<any>(this.urlLink)
