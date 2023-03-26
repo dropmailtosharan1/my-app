@@ -1,17 +1,19 @@
 {
   "posts": [
     {
-      "id": 1,
       "firstName": "Sharan",
       "lastName": "Reddy",
       "email": "sharanreddy@gmail.com",
       "mobile": "9898980000",
-      "salary": "55080"
+      "salary": "55080",
+      "id": 1,
+      "location": "Bangalore"
     },
     {
       "firstName": "Krishna",
       "lastName": "Kumar",
       "email": "krishnakumar@gmail.com",
+      "location": "Bangalore",
       "mobile": "9898989898",
       "salary": "53000",
       "id": 2
@@ -21,6 +23,7 @@
       "firstName": "Maruthi",
       "lastName": "Reddy",
       "email": "maruthireddy@gmail.com",
+      "location": "Bangalore",
       "mobile": "8998877889",
       "salary": "70000"
     },
@@ -29,6 +32,7 @@
       "firstName": "Rama ",
       "lastName": "Krishna",
       "email": "ramakrishna@gmail.com",
+      "location": "Bangalore",
       "mobile": "8767899000",
       "salary": "60000"
     },
@@ -36,9 +40,163 @@
       "firstName": "Madhu",
       "lastName": "Reddy",
       "email": "madhureddy@gmail.com",
+      "location": "Bangalore",
       "mobile": "9776565600",
       "salary": "60000",
       "id": 5
+    },
+    {
+      "firstName": "Karuna",
+      "lastName": "Kumar",
+      "email": "karunakumar@gmail.com",
+      "location": "Bangalore",
+      "mobile": "9898989898",
+      "salary": "18000",
+      "id": 6
+    },
+    {
+      "firstName": "Radha",
+      "lastName": "Krishna",
+      "email": "radha@gmail.com",
+      "location": "Bangalore",
+      "mobile": "9009898909",
+      "salary": "35000",
+      "id": 7
+    },
+    {
+      "firstName": "Sharan",
+      "lastName": "Reddy",
+      "email": "sharanreddy@gmail.com",
+      "location": "Chennai",
+      "mobile": "9898980000",
+      "salary": "55080",
+      "id": 8
+    },
+    {
+      "firstName": "Krishna",
+      "lastName": "Kumar",
+      "email": "krishnakumar@gmail.com",
+      "location": "Chennai",
+      "mobile": "9898989898",
+      "salary": "53000",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "firstName": "Maruthi",
+      "lastName": "Reddy",
+      "email": "maruthireddy@gmail.com",
+      "location": "Bangalore",
+      "mobile": "8998877889",
+      "salary": "70000"
+    },
+    {
+      "id": 11,
+      "firstName": "Rama ",
+      "lastName": "Krishna",
+      "email": "ramakrishna@gmail.com",
+      "location": "Hyderabad",
+      "mobile": "8767899000",
+      "salary": "60000"
+    },
+    {
+      "firstName": "Madhu",
+      "lastName": "Reddy",
+      "email": "madhureddy@gmail.com",
+      "location": "Hyderabad",
+      "mobile": "9776565600",
+      "salary": "60000",
+      "id": 12
+    },
+    {
+      "firstName": "Karuna",
+      "lastName": "Kumar",
+      "email": "karunakumar@gmail.com",
+      "location": "Hyderabad",
+      "mobile": "9898989898",
+      "salary": "18000",
+      "id": 13
+    },
+    {
+      "firstName": "Radha",
+      "lastName": "Krishna",
+      "email": "radha@gmail.com",
+      "location": "Hyderabad",
+      "mobile": "9009898909",
+      "salary": "35000",
+      "id": 14
+    },
+    {
+      "firstName": "Sharan",
+      "lastName": "Reddy",
+      "email": "sharanreddy@gmail.com",
+      "location": "Hyderabad",
+      "mobile": "9898980000",
+      "salary": "55080",
+      "id": 15
+    },
+    {
+      "firstName": "Krishna",
+      "lastName": "Kumar",
+      "email": "krishnakumar@gmail.com",
+      "location": "Hyderabad",
+      "mobile": "9898989898",
+      "salary": "53000",
+      "id": 16
+    },
+    {
+      "id": 17,
+      "firstName": "Maruthi",
+      "lastName": "Reddy",
+      "email": "maruthireddy@gmail.com",
+      "location": "Chennai",
+      "mobile": "8998877889",
+      "salary": "70000"
+    },
+    {
+      "id": 18,
+      "firstName": "Rama ",
+      "lastName": "Krishna",
+      "email": "ramakrishna@gmail.com",
+      "location": "Chennai",
+      "mobile": "8767899000",
+      "salary": "60000"
+    },
+    {
+      "firstName": "Madhu",
+      "lastName": "Reddy",
+      "email": "madhureddy@gmail.com",
+      "location": "Chennai",
+      "mobile": "9776565600",
+      "salary": "60000",
+      "id": 19
+    },
+    {
+      "firstName": "Karuna",
+      "lastName": "Kumar",
+      "email": "karunakumar@gmail.com",
+      "location": "Chennai",
+      "mobile": "9898989898",
+      "salary": "18000",
+      "id": 20
+    },
+    {
+      "firstName": "Radha",
+      "lastName": "Krishna",
+      "email": "radha@gmail.com",
+      "location": "Chennai",
+      "mobile": "9009898909",
+      "salary": "35000",
+      "id": 21
+    },
+    {
+      "firstName": "Anu ",
+      "lastName": "Radha",
+      "email": "anu@gmail.com",
+      "mobile": "9009900900",
+      "salary": "45000",
+      "id": 22,
+      "location": "Vigaz"
     }
   ],
   "signup": [
@@ -67,6 +225,15 @@
       "repeatpassword": "12345",
       "checkbox": true,
       "id": 3
+    },
+    {
+      "name": "Radha",
+      "phone": "9009898909",
+      "email": "radha@gmail.com",
+      "password": "12345",
+      "repeatpassword": "12345",
+      "checkbox": true,
+      "id": 4
     }
   ]
 }

@@ -16,6 +16,17 @@
   </div>
 </nav>
 
+<div class="container-fluid mt-2">
+  <h5>Search By First Name</h5>
+  <input
+    type="text"
+    class="form-control"
+    name="firstName"
+    [(ngModel)]="searchTerm"
+    placeholder="Enter the First Name to search"
+  />
+</div>
+
 <table class="table mt-3">
   <thead>
     <tr>
@@ -23,13 +34,20 @@
       <th scope="col">First Name</th>
       <th scope="col">Last Name</th>
       <th scope="col">Email ID</th>
+      <th scope="col">Location</th>
       <th scope="col">Mobile No</th>
       <th scope="col">Salary</th>
       <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let row of employeeData">
+    <tr
+      *ngFor="
+        let row of employeeData
+          | filter : searchTerm
+          | paginate : { itemsPerPage: itemsPerPage, currentPage: currentPage }
+      "
+    > <!-- Normal Pagination -->
       <!-- <td>1.</td>
         <td>Sharan</td>
         <td>Reddy</td>
@@ -40,6 +58,7 @@
       <td>{{ row.firstName }}</td>
       <td>{{ row.lastName }}</td>
       <td>{{ row.email }}</td>
+      <td>{{ row.location }}</td>
       <td>{{ row.mobile }}</td>
       <td>&nbsp;{{ row.salary | currency : "INR" }}</td>
       <td>
@@ -60,7 +79,10 @@
     </tr>
   </tbody>
 </table>
-
+<!-- Normal Pagination -->
+<div class="paginator">
+<pagination-controls (pageChange)="currentPage = $event"></pagination-controls>
+</div>
 <!-- Modal -->
 <div
   class="modal fade"
@@ -166,6 +188,34 @@
                 "
                 class="text-danger"
                 >*email is required</small
+              >
+            </p>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Location</label
+            >
+            <input
+              [ngClass]="
+                formValue.controls['location'].touched &&
+                formValue.hasError('required', 'location')
+                  ? 'primary'
+                  : 'secondary'
+              "
+              placeholder="location"
+              type="location"
+              formControlName="location"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+            <p>
+              <small
+                *ngIf="
+                  formValue.controls['location'].touched &&
+                  formValue.hasError('required', 'location')
+                "
+                class="text-danger"
+                >*location is required</small
               >
             </p>
           </div>

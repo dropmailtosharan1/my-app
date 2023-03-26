@@ -10,6 +10,7 @@ export class EmployeeDashboardModule {
   firstName: string = '';
   lastName: string = '';
   email: string = '';
+  location:string='';
   mobile: string = '';
   salary: string = '';
 }

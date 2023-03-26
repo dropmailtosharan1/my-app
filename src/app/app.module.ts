@@ -7,22 +7,32 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
 import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FilterPipe } from './pipe/filter.pipe';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatPaginatorModule} from '@angular/material/paginator';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignupComponent,
-    EmployeeDashboardComponent
+    EmployeeDashboardComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    NgxPaginationModule,
+    BrowserAnimationsModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
