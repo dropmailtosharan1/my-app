@@ -21,7 +21,9 @@ export class EmployeeDashboardComponent implements OnInit {
   showUpdate!: boolean;
   searchTerm: any;
   currentPage: number = 1;
-itemsPerPage: number = 5;
+  itemsPerPage: number = 5;
+  isDesc=false;
+
   constructor(private formBuilder: FormBuilder, private api: ApiService) {}
 
   ngOnInit(): void {
@@ -34,6 +36,20 @@ itemsPerPage: number = 5;
       salary: ['', Validators.required],
     });
     this.getAllEmployee();
+  }
+
+  sortfirstName(property:any){
+    this.isDesc=!this.isDesc;
+    let direction = this.isDesc ? 1:-1;
+    this.employeeData.sort(function (a:any,b:any){
+      if(a[property]<b[property]){
+        return -1 * direction;
+      } else if (a[property]> b[property]){
+        return 1 * direction;
+      }else{
+        return 0;
+      }
+    })
   }
   clickAddEmployee() {
     this.formValue.reset();

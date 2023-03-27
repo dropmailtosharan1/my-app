@@ -1,6 +1,6 @@
 <nav class="navbar navbar-light bg-primary">
   <div class="container-fluid">
-    <h1 style="color: aliceblue">Angular CRUD</h1>
+    <h1 style="color: aliceblue">Angular CRUD Operation Application</h1>
     <div class="d-flex">
       <button
         (click)="clickAddEmployee()"
@@ -17,7 +17,7 @@
 </nav>
 
 <div class="container-fluid mt-2">
-  <h5>Search By First Name</h5>
+  <h4>Search By First Name</h4>
   <input
     type="text"
     class="form-control"
@@ -31,7 +31,21 @@
   <thead>
     <tr>
       <th scope="col">Employee ID</th>
-      <th scope="col">First Name</th>
+      <th scope="col" (click)="sortfirstName('firstName')">
+        First Name
+        <i>
+          <svg
+            class="fontawesomesvg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+          >
+            <!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M137.4 41.4c12.5-12.5 32.8-12.5 45.3 0l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l128-128zm0 429.3l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128c-12.5 12.5-32.8 12.5-45.3 0z"
+            />
+          </svg>
+        </i>
+      </th>
       <th scope="col">Last Name</th>
       <th scope="col">Email ID</th>
       <th scope="col">Location</th>
@@ -47,7 +61,8 @@
           | filter : searchTerm
           | paginate : { itemsPerPage: itemsPerPage, currentPage: currentPage }
       "
-    > <!-- Normal Pagination -->
+    >
+      <!-- Normal Pagination -->
       <!-- <td>1.</td>
         <td>Sharan</td>
         <td>Reddy</td>
@@ -81,7 +96,9 @@
 </table>
 <!-- Normal Pagination -->
 <div class="paginator">
-<pagination-controls (pageChange)="currentPage = $event"></pagination-controls>
+  <pagination-controls
+    (pageChange)="currentPage = $event"
+  ></pagination-controls>
 </div>
 <!-- Modal -->
 <div
