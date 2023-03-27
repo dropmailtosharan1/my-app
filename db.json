@@ -197,6 +197,15 @@
       "salary": "45000",
       "id": 22,
       "location": "Vigaz"
+    },
+    {
+      "firstName": "Rama",
+      "lastName": "Nath",
+      "email": "ramnath@gmail.com",
+      "mobile": "9898989890",
+      "salary": "56000",
+      "location": "Kolkata",
+      "id": 23
     }
   ],
   "signup": [
@@ -234,6 +243,15 @@
       "repeatpassword": "12345",
       "checkbox": true,
       "id": 4
+    },
+    {
+      "name": "Rama Krishna",
+      "phone": "9889898900",
+      "email": "ramakrishna@gmail.com",
+      "password": "12345",
+      "repeatpassword": "12345",
+      "checkbox": true,
+      "id": 5
     }
   ]
 }
