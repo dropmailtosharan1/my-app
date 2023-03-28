@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-crud-application-538f6": {
+      "hosting": {
+        "my-app": [
+          "angular-crud-application-538f6"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-crud-application-538f6"
+  }
+}
