@@ -206,6 +206,15 @@
       "salary": "56000",
       "location": "Kolkata",
       "id": 23
+    },
+    {
+      "firstName": "Raja",
+      "lastName": "Sekhar",
+      "email": "raja@gmail.com",
+      "mobile": "900006009",
+      "salary": "45000",
+      "location": "Kurnool",
+      "id": 24
     }
   ],
   "signup": [
