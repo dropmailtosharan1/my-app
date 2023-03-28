@@ -13,6 +13,7 @@ export class EmployeeDashboardComponent implements OnInit {
     firstName: '',
     lastName: '',
     email: '',
+    location:'',
     mobile: '',
     salary: '',
   };
